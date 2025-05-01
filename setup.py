@@ -8,7 +8,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name="cool_streamlit_theme",
-    version="1.2.3",
+    version="1.2.4",
     description="A component that returns the active theme of the Streamlit app.",
     long_description=long_description,
     long_description_content_type="text/markdown",

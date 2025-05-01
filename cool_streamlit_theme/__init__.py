@@ -8,7 +8,7 @@ import streamlit.components.v1 as components
 from streamlit.errors import StreamlitAPIException
 
 
-_RELEASE = False
+_RELEASE = True
 
 if not _RELEASE:
     _st_theme = components.declare_component(
