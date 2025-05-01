@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_theme import st_theme
+from cool_streamlit_theme import st_theme
 
 adjust = st.toggle("Make the CSS adjustment")
 

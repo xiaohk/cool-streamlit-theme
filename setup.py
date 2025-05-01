@@ -7,12 +7,12 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
-    name="st-theme",
+    name="cool_streamlit_theme",
     version="1.2.3",
     description="A component that returns the active theme of the Streamlit app.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/gabrieltempass/streamlit-theme",
+    url="https://github.com/xiaohk/cool-streamlit-theme",
     project_urls={
         "Source Code": "https://github.com/gabrieltempass/streamlit-theme",
         "Bug Tracker": "https://github.com/gabrieltempass/streamlit-theme/issues",
@@ -43,12 +43,12 @@ setuptools.setup(
         "Topic :: Software Development :: Widget Sets",
     ],
     packages=[
-        "streamlit_theme",
+        "cool_streamlit_theme",
     ],
     include_package_data=True,
     entry_points={
         "console_scripts": [
-            "st-theme = streamlit_theme:print_version",
+            "cool_streamlit_theme = cool_streamlit_theme:print_version",
         ],
     },
     python_requires=">=3.8",

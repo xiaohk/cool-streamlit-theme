@@ -18,10 +18,7 @@ if not _RELEASE:
 else:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend/dist")
-    _st_theme = components.declare_component(
-        "st_theme",
-        path=build_dir
-    )
+    _st_theme = components.declare_component("st_theme", path=build_dir)
 
 
 def print_version():
@@ -33,7 +30,7 @@ def print_version():
 def stylized_container(key):
     """
     Add a spaceless container to the app.
-    
+
     Insert a container into the app, which receives an iframe that does not
     render anything. Style this container using CSS and a unique key. The style
     targeting `"stVerticalBlockBorderWrapper"` removes 1rem of space added by
@@ -128,15 +125,15 @@ def st_theme(adjust=True, key=None):
     Examples
     --------
     >>> import streamlit as st
-    >>> from streamlit_theme import st_theme
+    >>> from cool_streamlit_theme import st_theme
     >>> theme = st_theme()
     >>> st.write(theme)
-    
+
     .. output::
        https://st-theme-1.streamlit.app/
        height: 300px
     """
-    
+
     if not isinstance(adjust, bool):
         raise StreamlitAPIException(
             "The adjust parameter from st_theme() received an invalid type.\n"

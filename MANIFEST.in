@@ -1,1 +1,1 @@
-recursive-include streamlit_theme/frontend/dist *
+recursive-include cool_streamlit_theme/frontend/dist *
